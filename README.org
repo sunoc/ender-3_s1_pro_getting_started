@@ -1,0 +1,94 @@
+# -*- org-latex-pdf-process: ("platex -shell-escape %f; pbibtex README; platex -shell-escape %f" "dvipdfmx %b.dvi"); -*-
+:PROPERTIES:
+:ID:       5e26d50b-6b76-4ef2-ae9d-1911afcaa728
+:END:
+#+title: Ender-3 S1 Pro: 使う方法ガイド
+#+filetags: :draft:export:
+#+author: Vincent Conus
+#+date: 2024/06/19
+#+subtitle: 稲垣研究室、南山大学
+#+OPTIONS: toc:t date:t
+
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS:[10pt,a4paper,onecolumn,notitlepage,oneside,dvipdfmx]
+
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \usepackage{amssymb}
+#+LATEX_HEADER: \usepackage{bm}
+#+LATEX_HEADER: \usepackage{color}
+#+LATEX_HEADER: \usepackage{graphicx}
+#+LATEX_HEADER: \usepackage{tikz}
+#+LATEX_HEADER: \usepackage{wrapfig}
+
+#+LATEX_HEADER: \setlength{\oddsidemargin}{-10mm}
+#+LATEX_HEADER: \setlength{\topmargin}{-10mm}
+
+#+LATEX_HEADER: \setlength{\textheight}{245mm}
+#+LATEX_HEADER: \setlength{\textwidth}{180mm}
+
+#+LATEX_HEADER: \renewcommand{\figurename}{Fig.}
+#+LATEX_HEADER: \renewcommand{\tablename}{Tab.}
+#+LATEX_HEADER: \newcommand{\Figure}[1]{\figurename{\ref{#1}}}
+#+LATEX_HEADER: \newcommand{\Table} [1]{\tablename {\ref{#1}}}
+
+#+LATEX_HEADER: \makeatletter
+#+LATEX_HEADER: \newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+#+LATEX_HEADER: \newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \lhead{\@leftheader}
+#+LATEX_HEADER: \rhead{\@rightheader}
+#+LATEX_HEADER: \newcommand{\leftheader} [1]{\def\@leftheader{#1}}
+#+LATEX_HEADER: \newcommand{\rightheader}[1]{\def\@rightheader{#1}}
+
+#+LATEX_HEADER: \leftheader{グループゼミ資料}
+#+LATEX_HEADER: \rightheader{Ver.Ka}
+
+#+LATEX_HEADER: \renewcommand{\maketitle}{%
+#+LATEX_HEADER:   \begin{center}{\Large \@title}\end{center}%
+#+LATEX_HEADER:   \begin{flushright}\@author\\ \@date\end{flushright}%
+#+LATEX_HEADER: \hrulefill\\}
+
+#+LATEX_HEADER:\usepackage{multirow}
+#+LATEX_HEADER:\usepackage{subcaption}
+#+LATEX_HEADER:\usepackage{lscape}
+#+LATEX_HEADER:\usepackage{ascmac}
+#+LATEX_HEADER:\usepackage{bm}
+#+LATEX_HEADER:\usepackage{here}
+#+LATEX_HEADER:\usepackage{latexsym}
+#+LATEX_HEADER:\usepackage{algorithm}
+#+LATEX_HEADER:\usepackage{algpseudocode}
+#+LATEX_HEADER:\usepackage{url}
+#+LATEX_HEADER:\usetikzlibrary{arrows,automata}
+
+#+LATEX_HEADER:\algnewcommand\algorithmicforeach{\textbf{for each}}
+#+LATEX_HEADER:\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+
+#+LATEX_HEADER:\DeclareMathOperator*{\argmax}{arg\,max}
+#+LATEX_HEADER:\DeclareMathOperator*{\argmin}{arg\,min}
+
+* 初めに
+「Ender-3 S1 Pro」と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
+
+#+ATTR_LATEX: :float t :width 0.7\textwidth
+[[file:img/ender3.png]]
+
+** 練習：Benchy
+#+ATTR_LATEX: :float t :width 0.7\textwidth
+#+CAPTION: かわいい船
+[[file:img/benchy.jpg]]
+
+
+* スライシング
+** 練習
+
+* プリンチング
+** 練習
+
+* 整備助言
+
+** 湿気
+3Dプリンター用ラメントスプールは、一般的に湿気に弱い。
+もし長期間使用しない場合は、プリンターから取り出して箱に戻し、理想的にはケイ酸塩を入れた袋を中に入れて保管してください。
