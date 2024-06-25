@@ -70,19 +70,37 @@
 #+LATEX_HEADER:\DeclareMathOperator*{\argmin}{arg\,min}
 
 * 初めに
-「Ender-3 S1 Pro」と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
+Crealityの「Ender-3 S1 Pro」[fn:1]と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
 
-#+ATTR_LATEX: :float t :width 0.7\textwidth
+#+ATTR_LATEX: :float t :width 0.65\textwidth
 [[file:img/ender3.png]]
 
 ** 練習：Benchy
-#+ATTR_LATEX: :float t :width 0.7\textwidth
-#+CAPTION: かわいい船
+このガイドにBenchyと言うモデルは練習をしましょう。そのモデルを使うと、色々な問題を知ります：
+- 小さなベースは、ベッドの接着をテストすることができます。
+- キャビン部分は、アーチや橋、小さなディテールをテストすることができます。
+- 船体は、はみ出し具合をテストしたり、印刷の平滑性の欠点を見ることができます 
+- 小さくてかわいいので、もっとたくさん作りたくなります！
+#+ATTR_LATEX: :float t :width 0.65\textwidth
+#+CAPTION: 終わった船のプリント。プリントの層をみえる。
 [[file:img/benchy.jpg]]
+
+BenchyのSTLファイルはオンラインにドーンロードができます。
+- Prusa Printables: https://www.printables.com/model/3161-3d-benchy/files
+- Thingivers: https://www.thingiverse.com/thing:763622/files
+
+色々なファイルが見られるんですが、欲しいのは「3dbenchy.stl」と言うのです。
 
 
 * スライシング
-** 練習
+3Dモデルが作成または取得された場合、そのファイルをプリンターで理解できるようにす
+るために「スライス」する必要があります。
+
+スライス処理では、3Dモデル（通常はSTL形式）を入力として受け取り、プリンタヘッド
+がパーツを描画するためにたどるパスを直接表す座標のリストを作成します。プリンタヘッ
+ドの速度やプリンタの温度設定など、その他の情報も含まれます。
+
+** 練習： PrusaSlicerでBenchyのスライシング
 
 * プリンチング
 ** 練習
@@ -92,3 +110,7 @@
 ** 湿気
 3Dプリンター用ラメントスプールは、一般的に湿気に弱い。
 もし長期間使用しない場合は、プリンターから取り出して箱に戻し、理想的にはケイ酸塩を入れた袋を中に入れて保管してください。
+
+* Footnotes
+
+[fn:1] https://www.creality.com/products/creality-ender-3-s1-pro-fdm-3d-printer 

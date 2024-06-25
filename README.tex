@@ -1,4 +1,4 @@
-% Created 2024-06-19 Wed 14:54
+% Created 2024-06-25 Tue 16:19
 % Intended LaTeX compiler: pdflatex
 \documentclass[10pt,a4paper,onecolumn,notitlepage,oneside,dvipdfmx]{article}
 \usepackage{graphicx}
@@ -73,34 +73,60 @@
 \tableofcontents
 
 \section{初めに}
-\label{sec:orga813bd2}
-「Ender-3 S1 Pro」と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
+\label{sec:orgbd3cd64}
+Crealityの「Ender-3 S1 Pro」\footnote{\url{https://www.creality.com/products/creality-ender-3-s1-pro-fdm-3d-printer}}と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth]{img/ender3.png}
+\includegraphics[width=0.65\textwidth]{img/ender3.png}
 \end{figure}
 
 \subsection{練習：Benchy}
-\label{sec:orgf429a9d}
+\label{sec:org476461c}
+このガイドにBenchyと言うモデルは練習をしましょう。そのモデルを使うと、色々な問題を知ります：
+\begin{itemize}
+\item 小さなベースは、ベッドの接着をテストすることができます。
+\item キャビン部分は、アーチや橋、小さなディテールをテストすることができます。
+\item 船体は、はみ出し具合をテストしたり、印刷の平滑性の欠点を見ることができます
+\item 小さくてかわいいので、もっとたくさん作りたくなります！
+\end{itemize}
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.7\textwidth]{img/benchy.jpg}
-\caption{かわいい船}
+\includegraphics[width=0.65\textwidth]{img/benchy.jpg}
+\caption{終わった船のプリント。プリントの層をみえる。}
 \end{figure}
+
+BenchyのSTLファイルはオンラインにドーンロードができます。
+\begin{itemize}
+\item Prusa Printables: \url{https://www.printables.com/model/3161-3d-benchy/files}
+\item Thingivers: \url{https://www.thingiverse.com/thing:763622/files}
+\end{itemize}
+
+色々なファイルが見られるんですが、欲しいのは「3dbenchy.stl」と言うのです。
 
 
 \section{スライシング}
-\label{sec:org2db262d}
+\label{sec:orgfdcbba2}
+3Dモデルが作成または取得された場合、そのファイルをプリンターで理解できるようにす
+るために「スライス」する必要があります。
+
+スライス処理では、3Dモデル（通常はSTL形式）を入力として受け取り、プリンタヘッド
+がパーツを描画するためにたどるパスを直接表す座標のリストを作成します。プリンタヘッ
+ドの速度やプリンタの温度設定など、その他の情報も含まれます。
+
+\subsection{練習}
+\label{sec:org6f97c04}
 
 \section{プリンチング}
-\label{sec:orgacab8a9}
+\label{sec:org9e0b062}
+\subsection{練習}
+\label{sec:orgf567e1e}
 
 \section{整備助言}
-\label{sec:orgd940f5d}
+\label{sec:org9be53e5}
 
 \subsection{湿気}
-\label{sec:org86f712d}
+\label{sec:orgc54b4ad}
 3Dプリンター用ラメントスプールは、一般的に湿気に弱い。
 もし長期間使用しない場合は、プリンターから取り出して箱に戻し、理想的にはケイ酸塩を入れた袋を中に入れて保管してください。
 \end{document}
