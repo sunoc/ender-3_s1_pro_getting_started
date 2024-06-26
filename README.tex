@@ -1,4 +1,4 @@
-% Created 2024-06-25 Tue 16:19
+% Created 2024-06-26 Wed 14:23
 % Intended LaTeX compiler: pdflatex
 \documentclass[10pt,a4paper,onecolumn,notitlepage,oneside,dvipdfmx]{article}
 \usepackage{graphicx}
@@ -73,16 +73,15 @@
 \tableofcontents
 
 \section{初めに}
-\label{sec:orgbd3cd64}
+\label{sec:org234575f}
 Crealityの「Ender-3 S1 Pro」\footnote{\url{https://www.creality.com/products/creality-ender-3-s1-pro-fdm-3d-printer}}と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
 
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.65\textwidth]{img/ender3.png}
-\end{figure}
+\begin{center}
+\includegraphics[width=0.6\textwidth]{img/ender3.png}
+\end{center}
 
 \subsection{練習：Benchy}
-\label{sec:org476461c}
+\label{sec:org3b7225d}
 このガイドにBenchyと言うモデルは練習をしましょう。そのモデルを使うと、色々な問題を知ります：
 \begin{itemize}
 \item 小さなベースは、ベッドの接着をテストすることができます。
@@ -104,9 +103,9 @@ BenchyのSTLファイルはオンラインにドーンロードができます�
 
 色々なファイルが見られるんですが、欲しいのは「3dbenchy.stl」と言うのです。
 
-
+\pagebreak
 \section{スライシング}
-\label{sec:orgfdcbba2}
+\label{sec:orgee498e8}
 3Dモデルが作成または取得された場合、そのファイルをプリンターで理解できるようにす
 るために「スライス」する必要があります。
 
@@ -114,19 +113,49 @@ BenchyのSTLファイルはオンラインにドーンロードができます�
 がパーツを描画するためにたどるパスを直接表す座標のリストを作成します。プリンタヘッ
 ドの速度やプリンタの温度設定など、その他の情報も含まれます。
 
-\subsection{練習}
-\label{sec:org6f97c04}
+\subsection{PrusaSlicerのインスタール方法について}
+\label{sec:orgc279400}
+公式ページ\footnote{\url{https://www.prusa3d.com/fr/page/prusaslicer\_424/}}からスライサーソフトを掴めますが、LinuxでのおすすめはFlatpakです\footnote{\url{https://flathub.org/apps/com.prusa3d.PrusaSlicer}}。
 
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\textwidth]{img/ps.png}
+\caption{スライサー}
+\end{figure}
+
+\subsection{プリンターのスライサー初期設定}
+\label{sec:org0146f43}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.65\textwidth]{img/welcome.png}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.65\textwidth]{img/crea.png}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.65\textwidth]{img/ender3_beta.png}
+\end{figure}
+
+
+\subsection{練習： PrusaSlicerでBenchyのスライシング}
+\label{sec:org0453fa0}
+
+\pagebreak
 \section{プリンチング}
-\label{sec:org9e0b062}
+\label{sec:orgf0023fd}
 \subsection{練習}
-\label{sec:orgf567e1e}
+\label{sec:orgc1859ca}
 
+\pagebreak
 \section{整備助言}
-\label{sec:org9be53e5}
+\label{sec:orged0c559}
 
 \subsection{湿気}
-\label{sec:orgc54b4ad}
+\label{sec:org95bb107}
 3Dプリンター用ラメントスプールは、一般的に湿気に弱い。
 もし長期間使用しない場合は、プリンターから取り出して箱に戻し、理想的にはケイ酸塩を入れた袋を中に入れて保管してください。
 \end{document}

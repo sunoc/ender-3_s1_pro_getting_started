@@ -72,7 +72,7 @@
 * 初めに
 Crealityの「Ender-3 S1 Pro」[fn:1]と言うの機会は様々な種類のポリマー材料を用いて印刷できる積層造形装置です。
 
-#+ATTR_LATEX: :float t :width 0.65\textwidth
+#+ATTR_LATEX: :width 0.6\textwidth
 [[file:img/ender3.png]]
 
 ** 練習：Benchy
@@ -91,7 +91,7 @@ BenchyのSTLファイルはオンラインにドーンロードができます�
 
 色々なファイルが見られるんですが、欲しいのは「3dbenchy.stl」と言うのです。
 
-
+#+LATEX: \pagebreak
 * スライシング
 3Dモデルが作成または取得された場合、そのファイルをプリンターで理解できるようにす
 るために「スライス」する必要があります。
@@ -100,11 +100,34 @@ BenchyのSTLファイルはオンラインにドーンロードができます�
 がパーツを描画するためにたどるパスを直接表す座標のリストを作成します。プリンタヘッ
 ドの速度やプリンタの温度設定など、その他の情報も含まれます。
 
+** PrusaSlicerのインスタール方法について
+公式ページ[fn:2]からスライサーソフトを掴めますが、LinuxでのおすすめはFlatpakです[fn:3]。
+
+#+ATTR_LATEX: :float t :width 0.85\textwidth
+#+CAPTION: スライサー
+[[file:img/ps.png]]
+
+** プリンターのスライサー初期設定
+#+ATTR_LATEX: :float t :width 0.65\textwidth
+#+CAPTION: セタップウィザード
+[[file:img/welcome.png]]
+
+#+ATTR_LATEX: :float t :width 0.65\textwidth
+#+CAPTION: 「Other vendors」のメニューで「Creality」を押す。
+[[file:img/crea.png]]
+
+#+ATTR_LATEX: :float t :width 0.65\textwidth
+#+CAPTION:
+[[file:img/ender3_beta.png]]
+
+
 ** 練習： PrusaSlicerでBenchyのスライシング
 
+#+LATEX: \pagebreak
 * プリンチング
 ** 練習
 
+#+LATEX: \pagebreak
 * 整備助言
 
 ** 湿気
@@ -112,5 +135,9 @@ BenchyのSTLファイルはオンラインにドーンロードができます�
 もし長期間使用しない場合は、プリンターから取り出して箱に戻し、理想的にはケイ酸塩を入れた袋を中に入れて保管してください。
 
 * Footnotes
+
+[fn:3] https://flathub.org/apps/com.prusa3d.PrusaSlicer
+
+[fn:2] https://www.prusa3d.com/fr/page/prusaslicer_424/ 
 
 [fn:1] https://www.creality.com/products/creality-ender-3-s1-pro-fdm-3d-printer 
