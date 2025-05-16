@@ -117,7 +117,7 @@ BenchyのSTLファイルはオンラインにドーンロードができます�
 [[file:img/crea.png]]
 
 #+ATTR_LATEX: :float t :width 0.65\textwidth
-#+CAPTION:
+#+CAPTION:「Creality Ender-3 S1 Pro」を押す。
 [[file:img/ender3_beta.png]]
 
 
